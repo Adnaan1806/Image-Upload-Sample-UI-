@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload with Loading Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="left">
+            <h1>Upload an Image</h1>
+            <input type="file" id="uploadInput" accept="image/*">
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <h1>Find Your Image Here</h1>
+        <img id="uploadedImage" class="hidden" alt="Uploaded Image">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
