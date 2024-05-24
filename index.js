@@ -5,11 +5,10 @@ document.getElementById('uploadInput').addEventListener('change', function(event
     const loadingDiv = document.getElementById('loading');
     const uploadedImage = document.getElementById('uploadedImage');
 
-    // Show loading animation
     loadingDiv.style.display = 'flex';
     uploadedImage.classList.add('hidden');
 
-    // Simulate a delay for loading (e.g., uploading)
+
     setTimeout(() => {
         const reader = new FileReader();
         reader.onload = function(e) {
@@ -19,5 +18,5 @@ document.getElementById('uploadInput').addEventListener('change', function(event
             loadingDiv.style.display = 'none';
         };
         reader.readAsDataURL(file);
-    }, 2000); // Simulating a 2 second delay for the loading animation
+    }, 2000); 
 });
