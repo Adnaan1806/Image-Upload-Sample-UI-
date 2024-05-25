@@ -6,9 +6,25 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #240427;
-    justify-content: center;
-    align-items: center;
+    z-index: -1;
+    background-image: url(javier-miranda-hrmKDnm-kA4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
 
 .container {
     display: flex;
@@ -34,7 +50,7 @@ body {
     justify-content: center;
     color: white;
     border-radius: 20px;
-    box-shadow: 0 0 60px rgb(178, 27, 77);
+    box-shadow: 0 0 80px rgb(178, 27, 77);
 }
 
 .left {
@@ -43,7 +59,7 @@ body {
     width: 400px;
     background: white;
     border-radius: 20px;
-    box-shadow: 0 0 60px rgb(178, 27, 77);
+    box-shadow: 0 0 80px rgb(178, 27, 77);
     color: rgb(178, 27, 77);
 }
 
